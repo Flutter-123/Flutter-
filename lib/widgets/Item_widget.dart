@@ -3,7 +3,6 @@ import 'package:flutter_app/models/catalog.dart';
 
 class ItemWeight extends StatelessWidget {
   final Item item;
-  
 
   const ItemWeight({Key? key, required this.item})
       : assert(item != null),
@@ -20,7 +19,7 @@ class ItemWeight extends StatelessWidget {
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text(
-          "\$${item.price}",
+          "${item.price} /-",
           style: TextStyle(
             color: Colors.blue,
             fontWeight: FontWeight.bold,

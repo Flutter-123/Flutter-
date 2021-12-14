@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Pixel 4a",
+            "desc": "First Pixel phone with 5G support ,India",
+            "price": 28000,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/615nnBCxt7S._AC_SL1500_.jpg"
+        },
+        {
+            "id": 2,
+            "name": "BenQ GL2780 27inch",
+            "desc": "Built-in Speakers, Edge to Edge, Blue Light Filter, Wall Mountable, Tilt Adjustment, Flicker-Free",
+            "price": 14990,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/71cFfBNmYKL._SL1417_.jpg"
+        },
+        {
+            "id": 3,
+            "name": "MOTOROLA Edge 20",
+            "desc": "The Motorola Edge 20 has a Snapdragon 778G processor to ensure responsive performance while using your favourite apps, playing videos, and also while using the cameras.",
+            "price": 29999,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/312xSJZXUFL.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Realme GT 5G Master Edition",
+            "desc": "The Realme GT Master Edition is not just a new take on the company’s Master Edition philosophy, it also features the new Qualcomm Snapdragon 778G processor",
+            "price": 27999,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/31VEHnJFAIL.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Acer Nitro VG240YB 23.8 inch Full HD IPS Monitor",
+            "desc": "Gamming monitor having 144Hz screen fresh rate, IPS, Adjustment light and Tilt,Flicker-free",
+            "price": 12899,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/71JPEEGxpWL._SL1268_.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Sony Alpha ILCE-7C with 28-60mm Zoom Lens",
+            "desc": "Compact Full Frame Camera, 4K, Flip Screen, Light Weight, Real time Tracking, Content Creation",
+            "price": 178290,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/617aIxkbkBL._SL1500_.jpg"
+        },
+        {
+            "id": 7,
+            "name": "iQOO Z5 5G",
+            "desc": "Arctic Dawn, 8GB RAM, 128GB Storage) | Snapdragon 778G 5G Processor | 5000mAh Battery | 44W FlashCharge",
+            "price": 23990,
+            "color": "#0000F",
+            "image": "https://m.media-amazon.com/images/I/71mCphsCGZL._SL1200_.jpg"
+        }
+    ]
+}
