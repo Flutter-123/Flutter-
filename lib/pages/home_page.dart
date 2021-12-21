@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/models/catalog.dart';
-import 'package:flutter_app/widgets/Item_widget.dart';
 import 'package:flutter_app/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,14 +40,40 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: Model.data.length,
-          itemBuilder: (context, index) => ItemWeight(
-            item: Model.data[index],
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 16,
+            crossAxisSpacing: 16,
           ),
+          itemBuilder: (context, index) {
+            final item = Model.data[index];
+            return Card(
+              clipBehavior: Clip.antiAlias,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              child: GridTile(
+                  header: Container(
+                      child: Text(
+                        item.name,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      )),
+                  child: Image.network(item.image),
+                  footer: Text(
+                    item.price.toString(),
+                  )),
+            );
+          },
+          itemCount: Model.data.length,
         ),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
